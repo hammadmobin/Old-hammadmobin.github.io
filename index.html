@@ -63,7 +63,9 @@
                         <span class="tab ns-tab active" onclick="switchTab('ns')">News</span>
                         <!-- <span class="tab or-tab" onclick="switchTab('or')">Ongoing Research</span> -->
                         <span class="tab pb-tab" onclick="switchTab('pb')">Publications</span>
-                        <!-- <span class="tab pr-tab" onclick="switchTab('pr')">Preprints</span> -->
+                 	<!-- <span class="tab pr-tab" onclick="switchTab('pr')">Preprints</span> -->
+			<span class="tab pb-tab" onclick="switchTab('cs')">Certifications</span>
+                 
                     </div>
 
                     <hr>
@@ -172,6 +174,11 @@
                             <span class="pub-meta">CrowdML Workshop<br>ICML 2015</span>
                         </div>
                     </section>
+		       <section class="certifications">
+                    </section>
+
+		    
+		    
                 </div>
             </div>
         </div>
@@ -179,10 +186,13 @@
     <script>
     // var or = document.querySelector('.ongoing-research'),
     var pb = document.querySelector('.publications'),
-        ns = document.querySelector('.news');
+        ns = document.querySelector('.news'),
+	cr = document.querySelector('.certifcations');
+	    
     // var ort = document.querySelector('.or-tab'),
     var pbt = document.querySelector('.pb-tab'),
-        nst = document.querySelector('.ns-tab');
+        nst = document.querySelector('.ns-tab'),
+	crt=document.querySelector('.cr-tab');
     // or.style.display = 'none';
     pb.style.display = 'none';
     function switchTab(tab) {
@@ -194,6 +204,13 @@
                 pbt.className = 'tab pb-tab';
                 break;
             case 'pb':
+                ns.style.display = 'none';
+                nst.className = 'tab ns-tab';
+                pb.style.display = 'block';
+                pbt.className = 'tab pb-tab active';
+                break;
+			
+            case 'cr':
                 ns.style.display = 'none';
                 nst.className = 'tab ns-tab';
                 pb.style.display = 'block';
