@@ -133,19 +133,25 @@
                 nst.className = 'tab ns-tab active';
                 pb.style.display = 'none';
                 pbt.className = 'tab pb-tab';
+		cr.style.display = 'none';
+                crt.className = 'tab cr-tab';
                 break;
             case 'pb':
                 ns.style.display = 'none';
                 nst.className = 'tab ns-tab';
                 pb.style.display = 'block';
                 pbt.className = 'tab pb-tab active';
+		cr.style.display = 'none';
+                crt.className = 'tab cr-tab';
                 break;
 			
             case 'cr':
                 ns.style.display = 'none';
                 nst.className = 'tab ns-tab';
-                pb.style.display = 'block';
-                pbt.className = 'tab pb-tab active';
+                 pb.style.display = 'none';
+                pbt.className = 'tab pb-tab';
+		cr.style.display = 'block';
+                crt.className = 'tab cr-tab';
                 break;
             // case 'or':
             //     ns.style.display = 'none';
